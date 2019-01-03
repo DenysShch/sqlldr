@@ -2,7 +2,7 @@
 setlocal
 set t0=%time: =0%
 
-sqlldr HDS/call4_dev@//dn-mar.sdab.sn:1521/hdsdev CONTROL=E:\3_Work\04_Fizy\ctl\fizy_user.ctl, LOG=E:\3_Work\04_Fizy\log.log, BAD=E:\3_Work\04_Fizy\bad\err.bad, DATA=E:\3_Work\04_Fizy\data\user\all_in_one.csv PARALLEL=true 
+sqlldr dschuren/October_2018@//dm02-scan.sdab.sn:1521/dwh CONTROL=E:\3_Work\04_Fizy\ctl\test_fizy_user.ctl, LOG=E:\3_Work\04_Fizy\log.log, BAD=E:\3_Work\04_Fizy\bad\err.bad, DATA=E:\3_Work\04_Fizy\all_in_one.csv PARALLEL=true 
 
 
 set t=%time: =0%
